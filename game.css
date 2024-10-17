@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Suga';
+    src: url('pep.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'number';
+    src: url('num.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#prob{
+    font-family: number;
+    font-size: 50px;
+    color: brown;
+    background-color: #d1c7c7;
+    border-style: solid;
+    border-color: #edd651;
+    border-width: 4px;
+    position:fixed;
+    top: 20%;
+    right: center;
+    height: auto;
+    object-fit: contain;
+}
+
+#abox{
+    color: brown;
+    background-color: #d1c7c7;
+    outline: none;
+    font-family: number;
+    font-size: 30px;
+    border-width: 5px;
+    border-color: #edd651;
+    border-style: solid;
+    position: fixed;
+    top: 40%;
+    right: center;
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+}
+
+#begin{
+    color: #85633c;
+    background-color: #f8fc81;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #d4a90f;
+    font-family: Suga;
+    font-size: 250%;
+    position: fixed;
+    top: 63%;
+    right: center;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#begin:hover{
+    font-size: 300%;
+    color:#5e4c38;
+}
+
+#pointer {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+#cina {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#counter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#toaster {
+    position: absolute;
+    bottom: 15%;
+    left: center;
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+#NsL{
+    position: fixed;
+    top: 20px;
+    width: 10%;
+    right: 28%;
+    height: 10%;
+    object-fit: contain;
+}
+
+#Ns{
+    color: lightgreen;
+    font-family: number;
+    font-size: 40px;
+    position: fixed;
+    top: 30px;
+    right: 28%;
+    height: 10%;
+    object-fit: contain;
+}
+#Bs{
+    color: #e75480;
+    font-family: number;
+    font-size: 40px;
+    position: fixed;
+    top: 30px;
+    right: 20%;
+    height: 10%;
+    object-fit: contain
+}
+#BsL{
+    position: fixed;
+    top: 20px;
+    width: 10%;
+    right: 20%;
+    height: 10%;
+    object-fit: contain;
+}
+.Btoast{
+    position: absolute;
+    bottom: 28%;
+    left: center;
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+}
+
+.Ntoast{
+    position: absolute;
+    bottom: 28%;
+    left: center;
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+
+@keyframes toasterAnimation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.toasta{
+    animation: toasterAnimation 1s ease-out forwards;
+}
